@@ -46,7 +46,7 @@ function Wedding() {
         <div>
             <Head/>
 
-            <main ref={scrollRef}>
+            <main className='overflow-hidden'>
                 <Nav/>
 
                 <div className='spacing text-center'>
@@ -54,8 +54,8 @@ function Wedding() {
                     <p className='font-extralight text-gray-600 dark:text-gray-400'>Modern. Cultural. Innovate.</p>
                 </div>
 
-                <div className="video spacing my-2 line">
-                    <div className='h-[80vh] mx-auto md:h-[95vh] w-[75vw] md:w-[75vw] relative '>
+                <div ref={scrollRef} className="video mx-auto py-32 my-2 ">
+                    <div className='h-[60vh] mx-auto md:h-[95vh] w-[90vw] md:w-[75vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80'
                                alt='Menu'
                                fill
@@ -106,8 +106,8 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div className="image spacing">
-                    <div className='h-[100vh] mx-auto md:h-[95vh] w-[80vw] md:w-[80vw] relative line'>
+                <div className="image mx-auto py-32 ">
+                    <div className='h-[60vh] mx-auto md:h-[95vh] w-[90vw] md:w-[80vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -117,7 +117,7 @@ function Wedding() {
                 </div>
 
                 <div className="image py-32">
-                    <div className='h-[110vh] mx-auto md:h-[110vh] w-[100vw] md:w-[100vw] relative line'>
+                    <div className='h-[80vh] mx-auto md:h-[110vh] w-[100vw] md:w-[100vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1512060847456-85a2a1bf8b25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -126,8 +126,8 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div className="image spacing">
-                    <div className='h-[80vh] mx-auto md:h-[85vh] w-[60vw] md:w-[60vw] relative line'>
+                <div className="image mx-auto py-32 ">
+                    <div className='h-[60vh] mx-auto md:h-[85vh] w-[90vw] md:w-[60vw] relative line'>
                         <Image src='https://images.unsplash.com/flagged/photo-1566755395267-86735b23d097?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -137,7 +137,7 @@ function Wedding() {
                 </div>
 
                 <div className="image py-32">
-                    <div className='h-[110vh] mx-auto md:h-[110vh] w-[100vw] md:w-[100vw] relative line'>
+                    <div className='h-[80vh] mx-auto md:h-[110vh] w-[100vw] md:w-[100vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1551049699-b58eccc77864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -146,8 +146,8 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div className="image spacing">
-                    <div className='h-[100vh] mx-auto md:h-[95vh] w-[80vw] md:w-[80vw] relative line'>
+                <div className="image mx-auto py-32 ">
+                    <div className='h-[60vh] mx-auto md:h-[95vh] w-[90vw] md:w-[80vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1621621667797-e06afc217fb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -156,8 +156,8 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div className="image spacing">
-                    <div className='h-[80vh] mx-auto md:h-[85vh] w-[60vw] md:w-[60vw] relative line'>
+                <div className="image mx-auto py-32 ">
+                    <div className='h-[50vh] mx-auto md:h-[85vh] w-[80vw] md:w-[60vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1622504549828-0d1bc1b7615d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -166,8 +166,8 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div  className="image spacing">
-                    <div className='h-[100vh] mx-auto md:h-[95vh] w-[80vw] md:w-[80vw] relative line'>
+                <div  className="image mx-auto py-32 ">
+                    <div className='h-[60vh] mx-auto md:h-[95vh] w-[80vw] md:w-[80vw] relative line'>
                         <Image src='https://images.unsplash.com/photo-1556302482-70b6e670e6b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                                alt='Menu'
                                fill
@@ -176,7 +176,7 @@ function Wedding() {
                     </div>
                 </div>
 
-                <div className="next"></div>
+                <div className="next">
                 <Footer
                     image={'https://images.unsplash.com/photo-1583939413139-19eeeb3a198c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'}
                     subtitle={'Next'}
@@ -184,6 +184,7 @@ function Wedding() {
                     url={'/cases/wedding'}
 
                 />
+                </div>
             </main>
         </div>
     );

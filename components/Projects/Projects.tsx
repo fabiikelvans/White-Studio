@@ -38,7 +38,7 @@ function Projects() {
     }, );
 
     return (
-        <div ref={scrollRef} className='spacing min-h-[150vh] md:min-h-[200vh]'>
+        <div ref={scrollRef} className='spacing min-h-[100vh] md:min-h-[200vh]'>
 
             <div className='relative'>
                 <div className="absolute top-0 left-0">

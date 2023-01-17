@@ -49,7 +49,7 @@ function Footer( { image, subtitle, title, url } : Props) {
 
     return (
         <div ref={scrollRef}>
-        <div  className={'h-[150vh] line w-full relative'}>
+        <div  className={'h-[90vh] md:h-[150vh] line w-full relative'}>
 
             <div className='h-full w-full relative'>
                 <Image src={image}

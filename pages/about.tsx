@@ -17,10 +17,10 @@ function About() {
                     <h1 className='text-[8vw] md:text-[6vw]' style={amita.style}>
                         If it’s uncontained, is it still content ?
                     </h1>
-                    <h4 className='text-xl text-gray-600 dark:text-gray-400 font-semibold italic px-12 w-[60%] my-12'>
+                    <h4 className='text-xl text-gray-600 dark:text-gray-400 font-semibold italic px-2 md:px-12 w-[100%] md:w-[60%] my-12'>
                         We dance between unfiltered & refined, between Morocco & Luxembourg, transcending tradition to capture culture.
                     </h4>
-                    <p className='font-light text-xl px-12 w-[80%] text-gray-500 dark:text-gray-300'>
+                    <p className='font-light text-xl px-2 md:px-12 w-[100%] md:w-[80%] text-gray-500 dark:text-gray-300'>
                         Founded in 2020, Lights specializes in videos, live events & immersive experiences. Our work spans the whole audiovisual gamut, from art direction to live streaming to interactive installations. With each project, we strengthen the brand identity of organizations & causes – swapping skills with explose, our sister agency dedicated to digital branding. Lights is inspired by the unexpected & the deeply authentic. While pushing audiovisual limits, we keep our eyes on the human stories that connect us all.
                     </p>
                 </div>
