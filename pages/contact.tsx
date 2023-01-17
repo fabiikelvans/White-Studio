@@ -16,7 +16,7 @@ function Contact() {
 
                 <div className='spacing text-center'>
                     <h1 className='text-[10vw] md:text-[7vw]' style={amita.style}>Create with us.</h1>
-                    <p className='font-light text-gray-500 dark:text-gray-400 text-xl'>Pitch-perfect content in tone-deaf times. <br/>Let’s collaborate & take it further together.</p>
+                    <p className='pt-12 font-light text-gray-500 dark:text-gray-400 text-xl'>Pitch-perfect content in tone-deaf times. <br/>Let’s collaborate & take it further together.</p>
                 </div>
 
                 <div className="spacing grid grid-cols-1 gap-20 md:grid-cols-2">
