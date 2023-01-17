@@ -102,7 +102,7 @@ function Menu({state}) {
 
                         </ul>
 
-                        <div className='flex justify-between font-semibold text-gray-600 dark:text-gray-300 gap-x-8 text-sm'>
+                        <div className='flex flex-col gap-y-8 md:flex-row justify-between font-semibold text-gray-600 dark:text-gray-300 gap-x-8 text-sm'>
                             <div>
                                 <ul className='space-y-2'>
                                     <li>hello@whitestudio.com</li>
