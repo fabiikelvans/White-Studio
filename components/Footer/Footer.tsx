@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {amita} from "../../pages";
 import Image from "next/image";
 import Link from "next/link";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useIsomorphicLayoutEffect} from "usehooks-ts";
 
 interface Props {
     image?: any;
@@ -11,8 +14,42 @@ interface Props {
 }
 
 function Footer( { image, subtitle, title, url } : Props) {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const t1 = gsap.timeline();
+
+    let scrollRef = useRef(null);
+
+    useIsomorphicLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            t1.from('.line', {
+                scrollTrigger: {
+                    trigger: '.line',
+                    start: "top bottom",
+                    end: "bottom 300px",
+                    scrub: 1,
+                    pin: '.ghost',
+                },
+                duration: 1.8,
+                y: 100,
+                opacity: 0,
+                ease: "power4.out",
+                delay: 0.1,
+                stagger: {
+                    amount: 0.6
+                }
+
+            });
+        }, scrollRef); // <- scopes all selector text to the root element
+
+        return () => ctx.revert();
+    }, );
+
+
     return (
-        <div className={'h-[150vh]  w-full relative'}>
+        <div ref={scrollRef}>
+        <div  className={'h-[150vh] line w-full relative'}>
 
             <div className='h-full w-full relative'>
                 <Image src={image}
@@ -30,6 +67,7 @@ function Footer( { image, subtitle, title, url } : Props) {
                 </Link>
             </div>
 
+        </div>
         </div>
     );
 }

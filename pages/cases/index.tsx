@@ -1,11 +1,45 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Head} from "../../seo/Head/Head";
 import {amita} from "../index";
 import Nav from "../../components/Header/Nav/Nav";
 import Image from "next/image";
 import Link from "next/link";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useIsomorphicLayoutEffect} from "usehooks-ts";
 
 function Cases() {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const t1 = gsap.timeline();
+
+    let scrollRef = useRef(null);
+
+    useIsomorphicLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            t1.from('.line', {
+                scrollTrigger: {
+                    trigger: '.line',
+                    start: "top bottom",
+                    end: "bottom 300px",
+                    scrub: 1,
+                    pin: '.ghost',
+                },
+                duration: 1.8,
+                y: 100,
+                opacity: 0,
+                ease: "power4.out",
+                delay: 0.1,
+                stagger: {
+                    amount: 0.6
+                }
+
+            });
+        }, scrollRef); // <- scopes all selector text to the root element
+
+        return () => ctx.revert();
+    }, );
     return (
         <div>
 
@@ -19,7 +53,8 @@ function Cases() {
                 <h3 className='text-xl text-gray-600 dark:text-gray-400 tracking-wide font-light'>Audiovisual anomalies for human audiences.</h3>
             </div>
 
-                <div className="spacing relative flex flex-col space-y-32">
+                <div  ref={scrollRef}>
+                <div className="spacing line relative flex flex-col space-y-32">
 
                     <div className='group self-end'>
                             <div className='h-[50vh] overflow-hidden md:h-[70vh] w-[50vw] md:w-[50vw] relative'>
@@ -91,6 +126,7 @@ function Cases() {
                         <p className='mt-2 md:mt-4 tracking-wide text-gray-600 dark:text-gray-400 font-extralight'>Outdoor. Fishing. Explore.</p>
                     </div>
 
+                </div>
                 </div>
             </main>
         </div>
