@@ -46,7 +46,7 @@ function Wedding() {
         <div>
             <Head/>
 
-            <main className='overflow-hidden'>
+            <main>
                 <Nav/>
 
                 <div className='spacing text-center'>
